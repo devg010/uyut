@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ремонт квартир по смете | Уют</title>
+    <meta
+      name="description"
+      content="Косметический и капитальный ремонт, ремонт под ключ, демо-сроки и запись на бесплатный замер."
+    />
+    <meta name="robots" content="noindex" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ремонт квартир по смете | Уют" />
+    <meta
+      property="og:description"
+      content="Косметический и капитальный ремонт, ремонт под ключ, демо-сроки и запись на бесплатный замер."
+    />
+    <!-- uyut.example — домен-заглушка. Перед публикацией заменить в og:url и og:image. -->
+    <meta property="og:url" content="https://uyut.example/renovation.html" />
+    <meta property="og:image" content="https://uyut.example/assets/after3@2x.webp" />
+    <link rel="icon" href="assets/icon-renovation.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/heading.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/body.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="booking.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="top">
+      <div class="wrap navrow">
+        <a class="brand" href="index.html" aria-label="Уют, на главную"
+          ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+            class="brand-dot"
+            aria-hidden="true"
+            >.</span
+          ></a
+        >
+        <nav id="nav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a>
+          <a href="cleaning.html">Уборка</a><a href="renovation.html" aria-current="page">Ремонт</a
+          ><a href="calculator.html">Калькулятор</a><a href="reviews.html">Отзывы</a>
+        </nav>
+        <a class="btn slim lime navbook" href="index.html#booking">Оставить заявку</a
+        ><button class="burger" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.6"
+          >
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <nav class="crumb wrap" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">Ремонт</span>
+    </nav>
+    <main id="main">
+      <div class="wrap section first">
+        <div class="inner-hero">
+          <div>
+            <p class="eyebrow">Москва и МО</p>
+            <h1>Ремонт квартир</h1>
+            <p class="lead">
+              Выберите объём работ, посмотрите состав и запишитесь на бесплатный двухчасовой замер.
+            </p>
+            <a class="btn lime" href="calculator.html?kind=cosmetic">Рассчитать ремонт</a>
+          </div>
+          <figure>
+            <img
+              src="assets/after3.webp"
+              srcset="assets/after3.webp 1x, assets/after3@2x.webp 2x"
+              alt="Ремонт квартир, демо"
+              decoding="async"
+              loading="lazy"
+            />
+            <figcaption>Демо</figcaption>
+          </figure>
+        </div>
+        <p class="fine">
+          Демонстрационный состав работ, материалов и сроков. Окончательные условия фиксируют в заказе или
+          смете.
+        </p>
+        <article class="service-detail">
+          <div>
+            <p class="eyebrow">Ремонт квартир</p>
+            <h2>Косметический</h2>
+            <p>Освежить отделку</p>
+            <span class="duration">от 1 до 4 недель · демо</span>
+          </div>
+          <div>
+            <h3>Что входит</h3>
+            <p>
+              Готовим стены к окраске или оклейке, обновляем покрытие и плинтусы. Состав фиксируем по
+              помещениям.
+            </p>
+            <h3>Материалы</h3>
+            <p>Грунт, шпаклёвка, краска или обои. Цвет, артикул и объём заносим в ведомость материалов.</p>
+            <a href="calculator.html?kind=cosmetic">Рассчитать стоимость</a>
+          </div>
+        </article>
+        <article class="service-detail">
+          <div>
+            <p class="eyebrow">Ремонт квартир</p>
+            <h2>Капитальный</h2>
+            <p>Обновить квартиру целиком</p>
+            <span class="duration">от 1 до 4 месяцев · демо</span>
+          </div>
+          <div>
+            <h3>Что входит</h3>
+            <p>
+              Согласуем демонтаж, подготовку оснований, объём инженерных и отделочных работ. Скрытые этапы
+              принимаем до чистовой отделки.
+            </p>
+            <h3>Материалы</h3>
+            <p>Смеси для выравнивания, материалы черновой и чистовой отделки по согласованной смете.</p>
+            <a href="calculator.html?kind=major">Рассчитать стоимость</a>
+          </div>
+        </article>
+        <article class="service-detail">
+          <div>
+            <p class="eyebrow">Ремонт квартир</p>
+            <h2>Под ключ</h2>
+            <p>От подготовки до сдачи</p>
+            <span class="duration">от 2 до 6 месяцев · демо</span>
+          </div>
+          <div>
+            <h3>Что входит</h3>
+            <p>
+              Составляем перечень работ по комнатам, согласуем закупки и график этапов, организуем отделку и
+              подготовку к приёмке.
+            </p>
+            <h3>Материалы</h3>
+            <p>Комплектацию, финишные покрытия и расходники указываем в отдельной ведомости.</p>
+            <a href="calculator.html?kind=turnkey">Рассчитать стоимость</a>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <div>
+          <a class="brand" href="index.html" aria-label="Уют, на главную"
+            ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+              class="brand-dot"
+              aria-hidden="true"
+              >.</span
+            ></a
+          >
+          <p>Клининг и ремонт · Москва и МО</p>
+        </div>
+        <div>
+          <a href="privacy.html">Политика обработки данных</a
+          ><button class="link" data-cookies>Настройки cookie</button>
+        </div>
+        <div><a href="#admin">Демо-админка</a><span>Демонстрационный сайт</span></div>
+      </div>
+    </footer>
+    <a class="dock btn lime" href="calculator.html#booking">Оставить заявку</a>
+    <aside class="cookies" aria-label="Настройки cookie" hidden>
+      <p>
+        <strong>Настройки cookie</strong><br />Выбор сохраняется в браузере. Аналитика в демо работает как
+        заглушка.
+      </p>
+      <div>
+        <button class="btn plain small" data-cookie="all">Принять</button
+        ><button class="btn plain small" data-cookie="essential">Только необходимые</button>
+      </div>
+    </aside>
+    <dialog id="contact" aria-labelledby="contact-title">
+      <div class="dialog-top">
+        <h2 id="contact-title">Контакты</h2>
+        <button data-close aria-label="Закрыть">×</button>
+      </div>
+      <p id="contact-text"></p>
+      <a class="btn dark" href="index.html#booking">К демо-записи</a>
+    </dialog>
+    <dialog id="admin" class="admin" aria-labelledby="admin-title">
+      <div class="dialog-top">
+        <h2 id="admin-title">Демо-админка</h2>
+        <button data-close aria-label="Закрыть админку">×</button>
+      </div>
+      <div id="admin-content"></div>
+    </dialog>
+  </body>
+</html>

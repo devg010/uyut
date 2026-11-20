@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Уют | Клининг и ремонт квартир в Москве и МО</title>
+    <meta
+      name="description"
+      content="Подберите уборку или ремонт квартиры, сравните демо-цены и выберите время онлайн."
+    />
+    <meta name="robots" content="noindex" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Уют | Клининг и ремонт квартир в Москве и МО" />
+    <meta
+      property="og:description"
+      content="Подберите уборку или ремонт квартиры, сравните демо-цены и выберите время онлайн."
+    />
+    <!-- uyut.example — домен-заглушка. Перед публикацией заменить в og:url и og:image. -->
+    <meta property="og:url" content="https://uyut.example/index.html" />
+    <meta property="og:image" content="https://uyut.example/assets/hero@2x.webp" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/heading.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/body.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="booking.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="top">
+      <div class="wrap navrow">
+        <a class="brand" href="index.html" aria-label="Уют, на главную"
+          ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+            class="brand-dot"
+            aria-hidden="true"
+            >.</span
+          ></a
+        >
+        <nav id="nav" aria-label="Основная навигация">
+          <a href="index.html" aria-current="page">Главная</a>
+          <a href="cleaning.html">Уборка</a><a href="renovation.html">Ремонт</a
+          ><a href="calculator.html">Калькулятор</a><a href="reviews.html">Отзывы</a>
+        </nav>
+        <a class="btn slim lime navbook" href="index.html#booking">Оставить заявку</a
+        ><button class="burger" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.6"
+          >
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="eyebrow place">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.6"
+            >
+              <path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z" />
+              <circle cx="12" cy="10" r="2.4" /></svg
+            >Москва и Московская область
+          </p>
+          <h1>Сдаём квартиру <em>чистой.</em> Делаем ремонт по смете.</h1>
+          <p class="lead">
+            Уборка и ремонт квартир по всей Москве. За город выезжаем с доплатой за дорогу.
+          </p>
+          <div><a class="btn lime hero-cta" href="#calculator">Рассчитать стоимость</a></div>
+          <div class="contact-pair">
+            <button type="button" class="text-btn" data-contact="phone">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.6"
+              >
+                <path
+                  d="m5 3 3 1 1 5-2 1c1.8 3.5 3.5 5.3 7 7l1-2 5 1 1 3c-1 4-6 3-10-1C5 14 2 8 3 5z"
+                /></svg
+              >Позвонить</button
+            ><button type="button" class="text-btn" data-contact="telegram">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.6"
+              >
+                <path d="m3 11 18-8-4 18-5-6-3 3v-5l9-8-11 7z" /></svg
+              >Написать в Telegram
+            </button>
+          </div>
+        </div>
+        <figure class="hero-art">
+          <img
+            src="assets/hero.webp"
+            srcset="assets/hero.webp 1x, assets/hero@2x.webp 2x"
+            alt="Светлая гостиная с мягкой мебелью, иллюстрация интерьера"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <figcaption>Интерьер · демо</figcaption>
+        </figure>
+      </div>
+      <div class="ribbon">
+        <div class="wrap">
+          <div class="ticker" aria-label="Виды услуг">
+            <span>Поддерживающая уборка</span><span>Генеральная уборка</span><span>После ремонта</span
+            ><span>Косметический ремонт</span><span>Капитальный ремонт</span><span>Ремонт под ключ</span>
+          </div>
+        </div>
+      </div>
+      <section class="wrap section" id="services">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Направления</p>
+            <h2>Чем поможем</h2>
+          </div>
+        </div>
+        <div class="service-grid">
+          <a class="service-card lift" href="cleaning.html"
+            ><div class="card-photo">
+              <img
+                src="assets/after1.webp"
+                srcset="assets/after1.webp 1x, assets/after1@2x.webp 2x"
+                alt="Кухня после уборки, демо"
+                decoding="async"
+                loading="lazy"
+              /><span class="photo-note">Демо</span>
+            </div>
+            <div class="card-foot">
+              <div>
+                <h3>Уборка</h3>
+                <p>От поддерживающей до уборки после ремонта.</p>
+              </div>
+              <span class="round"
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.6"
+                >
+                  <path d="m12 3 2.1 6.9L21 12l-6.9 2.1L12 21l-2.1-6.9L3 12l6.9-2.1z" /></svg
+              ></span></div></a
+          ><a class="service-card lift" href="renovation.html"
+            ><div class="card-photo">
+              <img
+                src="assets/after3.webp"
+                srcset="assets/after3.webp 1x, assets/after3@2x.webp 2x"
+                alt="Комната с обновлённой отделкой, демо"
+                decoding="async"
+                loading="lazy"
+              /><span class="photo-note">Демо</span>
+            </div>
+            <div class="card-foot">
+              <div>
+                <h3>Ремонт</h3>
+                <p>От косметического обновления до ремонта под ключ.</p>
+              </div>
+              <span class="round"
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.6"
+                >
+                  <path d="m15 3 6 6-3 3-2-2-9 10-3-3 10-9-2-2z" /></svg
+              ></span></div
+          ></a>
+        </div>
+      </section>
+      <section class="steps-band">
+        <div class="wrap section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Как мы работаем</p>
+              <h2>От заявки до сдачи</h2>
+            </div>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>Заявка</h3>
+              <p>Вы выбираете услугу, площадь и время.</p>
+            </li>
+            <li>
+              <h3>Выезд или замер</h3>
+              <p>Уточняем состояние квартиры и объём работ.</p>
+            </li>
+            <li>
+              <h3>Смета и договор</h3>
+              <p>Согласуем состав работ, материалы и цену.</p>
+            </li>
+            <li>
+              <h3>Работа</h3>
+              <p>Выполняем согласованные этапы.</p>
+            </li>
+            <li>
+              <h3>Сдача и гарантия</h3>
+              <p>Проверяем результат по акту и условиям договора.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="wrap section" id="prices">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Демо-тарифы</p>
+            <h2>Сколько стоит работа</h2>
+          </div>
+        </div>
+        <div class="price-layout">
+          <div class="price-table">
+            <fieldset class="chipset" data-choice="prices">
+              <legend>Показать тарифы</legend>
+              <label class="chip"
+                ><input type="radio" name="prices" value="cleaning" checked /><span>Уборка</span></label
+              ><label class="chip"
+                ><input type="radio" name="prices" value="renovation" /><span>Ремонт</span></label
+              >
+            </fieldset>
+            <table>
+              <caption>
+                Базовая стоимость работ
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Услуга</th>
+                  <th scope="col">За м²</th>
+                </tr>
+              </thead>
+              <tbody id="price-rows"></tbody>
+            </table>
+            <a href="calculator.html">Открыть полный калькулятор</a>
+          </div>
+          <div class="calculator panel" id="calculator">
+            <fieldset class="chipset" data-choice="calc-type">
+              <legend>Направление</legend>
+              <label class="chip"
+                ><input type="radio" name="calc-type" value="cleaning" checked /><span>Уборка</span></label
+              ><label class="chip"
+                ><input type="radio" name="calc-type" value="renovation" /><span>Ремонт</span></label
+              >
+            </fieldset>
+            <div class="fields">
+              <label>Вид работ<select id="kind"></select></label>
+              <label
+                >Площадь, м²<input
+                  id="area"
+                  type="number"
+                  value="60"
+                  min="20"
+                  max="200"
+                  inputmode="numeric"
+              /></label>
+            </div>
+            <label class="range-label" for="area-slider">Площадь от 20 до 200 м²</label
+            ><input type="range" id="area-slider" min="20" max="200" value="60" />
+            <details class="calc-more">
+              <summary>Комнаты, санузлы и дополнительные услуги</summary>
+              <div class="fields">
+                <label
+                  >Комнаты<select id="rooms">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select></label
+                ><label
+                  >Санузлы<select id="baths">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select></label
+                >
+              </div>
+              <fieldset>
+                <legend>Дополнительно</legend>
+                <div id="extras" class="checks"></div>
+              </fieldset>
+            </details>
+            <label
+              >Где находится объект<select id="zone">
+                <option value="city">В Москве</option>
+                <option value="country">За городом, Московская область</option>
+              </select></label
+            >
+            <p id="trip-note" class="fine"></p>
+            <div class="sum">
+              <div>
+                <small>Предварительная стоимость · демо</small
+                ><output id="total" aria-live="polite"></output>
+              </div>
+              <a class="btn lime" href="#booking">Перейти к записи</a>
+            </div>
+            <p class="fine">Ориентировочно, точную цену назовёт менеджер.</p>
+          </div>
+        </div>
+      </section>
+      <section class="compare-band">
+        <div class="wrap section">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">До и после</p>
+              <h2>Разница в деталях</h2>
+            </div>
+            <p>Передвиньте разделитель, чтобы сравнить один и тот же ракурс.</p>
+          </div>
+          <figure class="comparison">
+            <div class="compare-photo">
+              <img
+                src="assets/after1.webp"
+                srcset="assets/after1.webp 1x, assets/after1@2x.webp 2x"
+                alt="Генеральная уборка кухни после работ, демо"
+                decoding="async"
+                loading="lazy"
+              />
+              <div class="before">
+                <img
+                  src="assets/before1.webp"
+                  srcset="assets/before1.webp 1x, assets/before1@2x.webp 2x"
+                  alt="Генеральная уборка кухни до работ, демо"
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <b class="flag first">До</b><b class="flag last">После</b
+              ><span class="divider" aria-hidden="true"><i>‹ ›</i></span
+              ><input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Граница сравнения: Генеральная уборка кухни"
+              />
+            </div>
+            <figcaption>Генеральная уборка кухни <small>Демо</small></figcaption>
+          </figure>
+          <figure class="comparison" hidden>
+            <div class="compare-photo">
+              <img
+                src="assets/after2.webp"
+                srcset="assets/after2.webp 1x, assets/after2@2x.webp 2x"
+                alt="Прихожая после отделки после работ, демо"
+                decoding="async"
+                loading="lazy"
+              />
+              <div class="before">
+                <img
+                  src="assets/before2.webp"
+                  srcset="assets/before2.webp 1x, assets/before2@2x.webp 2x"
+                  alt="Прихожая после отделки до работ, демо"
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <b class="flag first">До</b><b class="flag last">После</b
+              ><span class="divider" aria-hidden="true"><i>‹ ›</i></span
+              ><input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Граница сравнения: Прихожая после отделки"
+              />
+            </div>
+            <figcaption>Прихожая после отделки <small>Демо</small></figcaption>
+          </figure>
+          <figure class="comparison" hidden>
+            <div class="compare-photo">
+              <img
+                src="assets/after3.webp"
+                srcset="assets/after3.webp 1x, assets/after3@2x.webp 2x"
+                alt="Косметический ремонт комнаты после работ, демо"
+                decoding="async"
+                loading="lazy"
+              />
+              <div class="before">
+                <img
+                  src="assets/before3.webp"
+                  srcset="assets/before3.webp 1x, assets/before3@2x.webp 2x"
+                  alt="Косметический ремонт комнаты до работ, демо"
+                  decoding="async"
+                  loading="lazy"
+                />
+              </div>
+              <b class="flag first">До</b><b class="flag last">После</b
+              ><span class="divider" aria-hidden="true"><i>‹ ›</i></span
+              ><input
+                class="compare-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Граница сравнения: Косметический ремонт комнаты"
+              />
+            </div>
+            <figcaption>Косметический ремонт комнаты <small>Демо</small></figcaption>
+          </figure>
+          <div class="carousel">
+            <button data-slide="-1" aria-label="Предыдущий пример">‹</button
+            ><span id="slide-count" aria-live="polite">1 из 3</span
+            ><button data-slide="1" aria-label="Следующий пример">›</button>
+          </div>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Примеры работ · демо</p>
+            <h2>Три задачи для «Уюта»</h2>
+          </div>
+        </div>
+        <div class="case-grid">
+          <article class="case">
+            <div class="case-photo">
+              <img
+                src="assets/after1.webp"
+                srcset="assets/after1.webp 1x, assets/after1@2x.webp 2x"
+                alt="Кухня после переезда, демо"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <small>Кейс · демо</small>
+              <h3>Кухня после переезда</h3>
+              <dl>
+                <dt>Задача</dt>
+                <dd>Генеральная уборка</dd>
+                <dt>Что сделали</dt>
+                <dd>Очистили фасады и плитку</dd>
+                <dt>Результат</dt>
+                <dd>Кухня готова к расстановке посуды</dd>
+              </dl>
+              <p class="case-meta">60 м² · 4 часа · <span id="case1"></span></p>
+            </div>
+          </article>
+          <article class="case">
+            <div class="case-photo">
+              <img
+                src="assets/after2.webp"
+                srcset="assets/after2.webp 1x, assets/after2@2x.webp 2x"
+                alt="После отделки, демо"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <small>Кейс · демо</small>
+              <h3>После отделки</h3>
+              <dl>
+                <dt>Задача</dt>
+                <dd>Послестроительная уборка</dd>
+                <dt>Что сделали</dt>
+                <dd>Собрали пыль, вымыли пол и двери</dd>
+                <dt>Результат</dt>
+                <dd>Прихожая готова к меблировке</dd>
+              </dl>
+              <p class="case-meta">40 м² · 4 часа · <span id="case2"></span></p>
+            </div>
+          </article>
+          <article class="case">
+            <div class="case-photo">
+              <img
+                src="assets/after3.webp"
+                srcset="assets/after3.webp 1x, assets/after3@2x.webp 2x"
+                alt="Обновление комнаты, демо"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <small>Кейс · демо</small>
+              <h3>Обновление комнаты</h3>
+              <dl>
+                <dt>Задача</dt>
+                <dd>Косметический ремонт</dd>
+                <dt>Что сделали</dt>
+                <dd>Подготовили стены и обновили покрытие</dd>
+                <dt>Результат</dt>
+                <dd>Согласованный цвет и свежая отделка</dd>
+              </dl>
+              <p class="case-meta">25 м² · 1 неделя · <span id="case3"></span></p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="wrap social-grid">
+        <div>
+          <p class="eyebrow">Отзывы</p>
+          <h2>Мнения клиентов</h2>
+          <p>В демо пока нет опубликованных отзывов.</p>
+          <a href="reviews.html">Карточка организации</a>
+        </div>
+        <div>
+          <p class="eyebrow">Акции · демо</p>
+          <h2>Предложения</h2>
+          <p>Активных акций пока нет. Посмотреть стоимость работ можно в калькуляторе.</p>
+          <a href="#calculator">К расчёту</a>
+        </div>
+      </section>
+      <section class="wrap section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Гарантии и документы</p>
+            <h2>Что фиксируем письменно</h2>
+          </div>
+        </div>
+        <div class="docs">
+          <article>
+            <h3>Договор</h3>
+            <p>Состав работ, адрес, сроки и порядок оплаты.</p>
+          </article>
+          <article>
+            <h3>Акт</h3>
+            <p>Выполненные этапы и замечания при приёмке.</p>
+          </article>
+          <article>
+            <h3>Гарантия</h3>
+            <p>Условия по видам работ. Срок гарантии: [указать].</p>
+          </article>
+        </div>
+      </section>
+      <section class="wrap section faq">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Частые вопросы</h2>
+          </div>
+        </div>
+        <div>
+          <details>
+            <summary>Что входит в стоимость калькулятора?</summary>
+            <p>
+              Расчёт учитывает вид работ, площадь, комнаты, санузлы, выбранные опции и выезд. Цены
+              демонстрационные. Для ремонта показана стоимость работ, материалы согласуются отдельно.
+            </p>
+          </details>
+          <details>
+            <summary>Можно заказать выезд за город?</summary>
+            <p>
+              Да. Выберите Московскую область в калькуляторе. Доплата за выезд появится в расчёте до записи.
+              Замер для ремонта бесплатный.
+            </p>
+          </details>
+          <details>
+            <summary>Как узнать, сколько продлится уборка?</summary>
+            <p>
+              После выбора вида уборки и площади форма покажет длительность. В списке остаются варианты, при
+              которых одна бригада свободна до конца уборки.
+            </p>
+          </details>
+          <details>
+            <summary>Как работает сравнение «до и после»?</summary>
+            <p>
+              Выберите пример, затем потяните разделитель или используйте клавиши со стрелками. Изображения
+              показывают демо-сценарии.
+            </p>
+          </details>
+          <details>
+            <summary>Можно изменить смету во время ремонта?</summary>
+            <p>
+              Дополнительные работы и изменение стоимости согласуют до начала этих работ. В демо показан
+              пример порядка согласования.
+            </p>
+          </details>
+          <details>
+            <summary>Куда попадёт заявка?</summary>
+            <p>
+              Только в этот браузер. Сводка откроется после сохранения. Там же можно отменить запись и
+              освободить время.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section id="booking" class="section booking wrap">
+        <div class="booking-intro">
+          <p class="eyebrow">Заявка и контакты</p>
+          <h2>Выберем время?</h2>
+          <p>Укажите параметры заказа и удобное окно. Время указано по Москве.</p>
+          <div class="contact-pair">
+            <button type="button" class="text-btn" data-contact="phone">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.6"
+              >
+                <path
+                  d="m5 3 3 1 1 5-2 1c1.8 3.5 3.5 5.3 7 7l1-2 5 1 1 3c-1 4-6 3-10-1C5 14 2 8 3 5z"
+                /></svg
+              >Позвонить</button
+            ><button type="button" class="text-btn" data-contact="telegram">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.6"
+              >
+                <path d="m3 11 18-8-4 18-5-6-3 3v-5l9-8-11 7z" /></svg
+              >Написать в Telegram
+            </button>
+          </div>
+          <p class="fine">+7 (000) 000-00-00 · демо-контакт</p>
+        </div>
+        <noscript><p>Для расчёта и локальной записи включите JavaScript в браузере.</p></noscript>
+        <form method="dialog" id="book-form" class="panel" autocomplete="off">
+          <div class="form-summary">
+            <strong id="order-line"></strong><a href="#calculator">Изменить расчёт</a>
+          </div>
+          <label id="crew-label">Исполнитель<select id="crew"></select></label>
+          <fieldset>
+            <legend>Дата выезда</legend>
+            <div class="days" id="days"></div>
+            <button type="button" class="btn plain small" id="other-date">Другая дата</button>
+          </fieldset>
+          <fieldset>
+            <legend>Свободное время</legend>
+            <p id="duration" class="fine"></p>
+            <div class="times" id="times"></div>
+          </fieldset>
+          <div class="fields">
+            <label>Имя<input name="name" maxlength="80" required autocomplete="given-name" /></label
+            ><label
+              >Телефон<input
+                type="tel"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+                maxlength="32"
+                autocomplete="tel"
+                required
+            /></label>
+          </div>
+          <label id="district-label">Район Москвы<select name="district"></select></label>
+          <label id="town-label" hidden>Населённый пункт в МО<input name="town" maxlength="100" /></label>
+          <label
+            >Адрес выезда<input name="address" maxlength="200" required placeholder="Улица, дом, квартира"
+          /></label>
+          <label
+            >Комментарий <span class="fine">(по желанию)</span
+            ><textarea name="comment" rows="2" maxlength="700"></textarea>
+          </label>
+          <div class="trap" aria-hidden="true">
+            <label>Оставьте поле пустым<input name="website" autocomplete="off" tabindex="-1" /></label>
+          </div>
+          <label class="check"
+            ><input type="checkbox" required name="consent" /><span
+              >Даю согласие на обработку данных для демо-записи. Заявка хранится в этом браузере.
+              <a href="privacy.html" target="_blank" rel="noopener">Политика обработки данных</a></span
+            ></label
+          >
+          <p id="booking-status" class="message" role="status"></p>
+          <button class="btn dark" type="submit" disabled>Сохранить демо-заявку</button>
+        </form>
+      </section>
+      <dialog id="calendar" aria-labelledby="cal-title">
+        <div class="dialog-top">
+          <h2 id="cal-title">Другая дата</h2>
+          <button type="button" data-close aria-label="Закрыть календарь">×</button>
+        </div>
+        <div class="cal-nav">
+          <button type="button" id="prev-month" aria-label="Предыдущий месяц">‹</button
+          ><strong id="cal-month" aria-live="polite"></strong
+          ><button type="button" id="next-month" aria-label="Следующий месяц">›</button>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+        <p class="fine">Серым отмечены недоступные дни. Запись открыта на 60 дней.</p>
+      </dialog>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <div>
+          <a class="brand" href="index.html" aria-label="Уют, на главную"
+            ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+              class="brand-dot"
+              aria-hidden="true"
+              >.</span
+            ></a
+          >
+          <p>Клининг и ремонт · Москва и МО</p>
+        </div>
+        <div>
+          <a href="privacy.html">Политика обработки данных</a
+          ><button class="link" data-cookies>Настройки cookie</button>
+        </div>
+        <div><a href="#admin">Демо-админка</a><span>Демонстрационный сайт</span></div>
+      </div>
+    </footer>
+    <a class="dock btn lime" href="#booking">Оставить заявку</a>
+    <aside class="cookies" aria-label="Настройки cookie" hidden>
+      <p>
+        <strong>Настройки cookie</strong><br />Выбор сохраняется в браузере. Аналитика в демо работает как
+        заглушка.
+      </p>
+      <div>
+        <button class="btn plain small" data-cookie="all">Принять</button
+        ><button class="btn plain small" data-cookie="essential">Только необходимые</button>
+      </div>
+    </aside>
+    <dialog id="contact" aria-labelledby="contact-title">
+      <div class="dialog-top">
+        <h2 id="contact-title">Контакты</h2>
+        <button data-close aria-label="Закрыть">×</button>
+      </div>
+      <p id="contact-text"></p>
+      <a class="btn dark" href="index.html#booking">К демо-записи</a>
+    </dialog>
+    <dialog id="admin" class="admin" aria-labelledby="admin-title">
+      <div class="dialog-top">
+        <h2 id="admin-title">Демо-админка</h2>
+        <button data-close aria-label="Закрыть админку">×</button>
+      </div>
+      <div id="admin-content"></div>
+    </dialog>
+  </body>
+</html>

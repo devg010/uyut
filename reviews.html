@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Карточка организации и отзывы | Уют</title>
+    <meta
+      name="description"
+      content="Демонстрационная карточка сервиса «Уют», территория выезда, контакты и раздел отзывов."
+    />
+    <meta name="robots" content="noindex" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Карточка организации и отзывы | Уют" />
+    <meta
+      property="og:description"
+      content="Демонстрационная карточка сервиса «Уют», территория выезда, контакты и раздел отзывов."
+    />
+    <!-- uyut.example — домен-заглушка. Перед публикацией заменить в og:url и og:image. -->
+    <meta property="og:url" content="https://uyut.example/reviews.html" />
+    <meta property="og:image" content="https://uyut.example/assets/before1@2x.webp" />
+    <link rel="icon" href="assets/icon-reviews.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/heading.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/body.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="booking.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="top">
+      <div class="wrap navrow">
+        <a class="brand" href="index.html" aria-label="Уют, на главную"
+          ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+            class="brand-dot"
+            aria-hidden="true"
+            >.</span
+          ></a
+        >
+        <nav id="nav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a>
+          <a href="cleaning.html">Уборка</a><a href="renovation.html">Ремонт</a
+          ><a href="calculator.html">Калькулятор</a><a href="reviews.html" aria-current="page">Отзывы</a>
+        </nav>
+        <a class="btn slim lime navbook" href="index.html#booking">Оставить заявку</a
+        ><button class="burger" aria-label="Открыть меню" aria-controls="nav" aria-expanded="false">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.6"
+          >
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <nav class="crumb wrap" aria-label="Хлебные крошки">
+      <a href="index.html">Главная</a> <span aria-hidden="true">/</span>
+      <span aria-current="page">Отзывы</span>
+    </nav>
+    <main id="main">
+      <div class="wrap section first">
+        <p class="eyebrow">Карточка организации · демо</p>
+        <h1>Уют</h1>
+        <p class="lead">Клининг и ремонт квартир в Москве и Московской области.</p>
+        <div class="profile-grid">
+          <figure class="profile-photo">
+            <img
+              src="assets/hero.webp"
+              srcset="assets/hero.webp 1x, assets/hero@2x.webp 2x"
+              alt="Демонстрационный интерьер"
+              decoding="async"
+              loading="lazy"
+            />
+            <figcaption>Интерьер · демо</figcaption>
+          </figure>
+          <section class="panel">
+            <h2>Об организации</h2>
+            <dl>
+              <dt>Услуги</dt>
+              <dd>Уборка, ремонт, замер</dd>
+              <dt>Территория</dt>
+              <dd>Вся Москва и выезды за город с доплатой</dd>
+              <dt>Демо-контакт</dt>
+              <dd>+7 (000) 000-00-00</dd>
+            </dl>
+            <a class="btn lime" href="calculator.html">Рассчитать стоимость</a>
+          </section>
+        </div>
+        <section class="panel reviews-empty">
+          <h2>Отзывы</h2>
+          <p>
+            Отзывов пока нет. Здесь появятся мнения клиентов, которые воспользовались услугой и согласились
+            на публикацию.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <div>
+          <a class="brand" href="index.html" aria-label="Уют, на главную"
+            ><span class="brand-mark" aria-hidden="true"><i></i></span>Уют<span
+              class="brand-dot"
+              aria-hidden="true"
+              >.</span
+            ></a
+          >
+          <p>Клининг и ремонт · Москва и МО</p>
+        </div>
+        <div>
+          <a href="privacy.html">Политика обработки данных</a
+          ><button class="link" data-cookies>Настройки cookie</button>
+        </div>
+        <div><a href="#admin">Демо-админка</a><span>Демонстрационный сайт</span></div>
+      </div>
+    </footer>
+    <a class="dock btn lime" href="calculator.html#booking">Оставить заявку</a>
+    <aside class="cookies" aria-label="Настройки cookie" hidden>
+      <p>
+        <strong>Настройки cookie</strong><br />Выбор сохраняется в браузере. Аналитика в демо работает как
+        заглушка.
+      </p>
+      <div>
+        <button class="btn plain small" data-cookie="all">Принять</button
+        ><button class="btn plain small" data-cookie="essential">Только необходимые</button>
+      </div>
+    </aside>
+    <dialog id="contact" aria-labelledby="contact-title">
+      <div class="dialog-top">
+        <h2 id="contact-title">Контакты</h2>
+        <button data-close aria-label="Закрыть">×</button>
+      </div>
+      <p id="contact-text"></p>
+      <a class="btn dark" href="index.html#booking">К демо-записи</a>
+    </dialog>
+    <dialog id="admin" class="admin" aria-labelledby="admin-title">
+      <div class="dialog-top">
+        <h2 id="admin-title">Демо-админка</h2>
+        <button data-close aria-label="Закрыть админку">×</button>
+      </div>
+      <div id="admin-content"></div>
+    </dialog>
+  </body>
+</html>
