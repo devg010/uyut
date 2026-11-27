@@ -55,6 +55,15 @@ button,
 input,
 textarea,
 select,
+summary,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+input,
+textarea,
+select,
 summary {
   touch-action: manipulation;
 }
@@ -1058,7 +1067,7 @@ dialog::backdrop {
     gap: 0.7rem;
   }
   .navbook {
-    margin-left: auto;
+    display: none;
   }
   .burger {
     display: inline-flex;
@@ -1102,21 +1111,22 @@ dialog::backdrop {
   .dock {
     position: fixed;
     z-index: 2;
-    bottom: max(0.55rem, env(safe-area-inset-bottom));
-    left: var(--pad);
-    right: var(--pad);
-    display: flex;
+    bottom: calc(0.55rem + env(safe-area-inset-bottom));
+    right: max(var(--pad), env(safe-area-inset-right));
+    display: inline-flex;
+    padding: 0.62rem 1rem;
+    font-size: 0.94rem;
     box-shadow: var(--shadow);
   }
   body {
-    padding-bottom: calc(4.6rem + env(safe-area-inset-bottom));
+    padding-bottom: calc(3.85rem + env(safe-area-inset-bottom));
   }
   body.hide-dock .dock,
   body:has(dialog[open]) .dock {
     display: none;
   }
   .cookies {
-    bottom: calc(4.45rem + env(safe-area-inset-bottom));
+    bottom: calc(3.85rem + env(safe-area-inset-bottom));
     left: var(--pad);
     right: var(--pad);
     width: auto;
@@ -1127,6 +1137,18 @@ dialog::backdrop {
   }
 }
 @media (max-width: 43rem) {
+  :root {
+    --topbar-height: 3.6rem;
+  }
+  .section {
+    padding-block: clamp(1.55rem, 5vw, 2.3rem);
+  }
+  .hero {
+    padding-block: 1.4rem 1.65rem;
+  }
+  .lead {
+    margin-block: 0.75rem 1rem;
+  }
   .hero,
   .service-grid,
   .case-grid,
@@ -1146,6 +1168,7 @@ dialog::backdrop {
   }
   .section-head {
     display: block;
+    margin-bottom: 1rem;
   }
   .section-head > p {
     margin-top: 0.9rem;
@@ -1171,8 +1194,49 @@ dialog::backdrop {
   .fields {
     gap: 0.6rem;
   }
+  .price-layout,
+  .booking {
+    gap: 0.9rem;
+  }
+  .booking {
+    scroll-margin-top: 0;
+  }
+  .booking-intro > p:not(.eyebrow) {
+    margin-top: 0.55rem;
+  }
+  .booking-intro .contact-pair {
+    margin-top: 0.6rem;
+  }
+  .calculator,
+  .booking form {
+    gap: 0.68rem;
+    padding: 0.8rem;
+  }
+  .calc-more {
+    padding-block: 0.4rem;
+  }
+  .calc-more .fields,
+  .calc-more fieldset {
+    margin-top: 0.65rem;
+  }
   .sum {
-    align-items: start;
+    align-items: center;
+    gap: 0.45rem 0.7rem;
+    padding-top: 0.65rem;
+  }
+  .sum .btn {
+    padding: 0.58rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .calculator output {
+    font-size: 1.6rem;
+  }
+  .calculator > .fine {
+    margin-block: 0;
+  }
+  .form-summary {
+    gap: 0.4rem;
+    padding-bottom: 0.65rem;
   }
   .social-grid > div {
     padding: 1.4rem;
@@ -1185,10 +1249,6 @@ dialog::backdrop {
   }
 }
 @media (max-width: 23rem) {
-  .navbook {
-    font-size: 0.83rem !important;
-    padding: 0.58rem 0.7rem !important;
-  }
   .brand {
     font-size: 2rem;
   }
